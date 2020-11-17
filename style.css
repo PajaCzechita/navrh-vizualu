@@ -12,6 +12,12 @@ body {
   font-size: 14px;
 }
 
+/*----hexagon clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);*/
+.hexagon{
+
+}
+
+
 header,
 footer,
 nav {
@@ -78,6 +84,41 @@ img {
 /*----------TABLET & DESKTOP FROM 1024px----------*/
 
 @media only screen and (min-width: 1024px) {
+  .hexagon {
+    position: relative;
+    width: 500px; 
+    height: 288.68px;
+    background-color: #64C7CC;
+    margin: 144.34px 0;
+    border-left: solid 5px #333333;
+    border-right: solid 5px #333333;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 353.55px;
+    height: 353.55px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 68.2233px;
+  }
+  
+  .hexagon:before {
+    top: -176.7767px;
+    border-top: solid 7.0711px #333333;
+    border-right: solid 7.0711px #333333;
+  }
+  
+  .hexagon:after {
+    bottom: -176.7767px;
+    border-bottom: solid 7.0711px #333333;
+    border-left: solid 7.0711px #333333;
+  }
   .container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
