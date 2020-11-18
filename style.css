@@ -87,7 +87,7 @@ transform: translate(0, -170px);
 
 .main__btn{
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   color: black;
   background-color: white;
   padding: 7px;
@@ -95,6 +95,15 @@ transform: translate(0, -170px);
   padding-right: 15px;
   border: 2px solid black;
   border-radius: 5px;
+}
+
+.main__registration{
+  text-align: center;
+  transform: translate(0, -100px);
+}
+.main__registration a{
+  text-decoration: none;
+  color: black;
 }
 
 .main__welcome{
