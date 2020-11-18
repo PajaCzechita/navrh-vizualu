@@ -12,12 +12,15 @@ body {
   font-size: 14px;
 }
 
+nav{
+  height: 50px;
+}
 .main{
   font-family: 'Montserrat', sans-serif;
 }
 /*-----hexagon----- */
 .hexagon__position{
-  padding-top: 20vh;
+  padding-top: 13vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,8 +37,8 @@ body {
   border-right: solid 3px #000000;
 }
 
-.hexagon:before,
-.hexagon:after {
+.hexagon::before,
+.hexagon::after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -48,16 +51,25 @@ body {
   left: 26.2893px;
 }
 
-.hexagon:before {
+.hexagon::before {
   top: -70.7107px;
   border-top: solid 4.2426px #000000;
   border-right: solid 4.2426px #000000;
 }
 
-.hexagon:after {
+.hexagon::after {
   bottom: -70.7107px;
   border-bottom: solid 4.2426px #000000;
   border-left: solid 4.2426px #000000;
+}
+.hexagon--selected{
+  background-color: #FFB802;
+  border-left: solid 3px #FFB802;
+  border-right: solid 3px #FFB802;
+}
+.hexagon--selected::before,
+.hexagon--selected::after{
+  border: #FFB802;
 }
 
 .main__logo{
@@ -73,10 +85,24 @@ transform: translate(0, -170px);
   font-weight: 500;
 }
 
-.main__welcome{
-  transform: translate(0, -70px);
-  text-align: center;
+.main__btn{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  background-color: white;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
 }
+
+.main__welcome{
+    transform: translate(0, -70px);
+    margin: auto;
+    width: 200px;
+    text-align: center;
+  }
 
 header,
 footer,
