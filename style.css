@@ -46,6 +46,7 @@ nav div{
   margin: 57.74px 0;
   border-left: solid 3px #000000;
   border-right: solid 3px #000000;
+
 }
 
 .hexagon::before,
@@ -60,6 +61,7 @@ nav div{
   transform: scaleY(0.5774) rotate(-45deg);
   background-color: inherit;
   left: 26.2893px;
+
 }
 
 .hexagon::before {
@@ -95,6 +97,7 @@ transform: translate(0, -180px);
   letter-spacing: 0px;
   font-weight: 500;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 900ms
 }
 
 .main__btn{
@@ -111,6 +114,8 @@ transform: translate(0, -180px);
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  transition: 700ms
+
 }
 .main__btn--selected{
   color: white;
@@ -121,12 +126,15 @@ transform: translate(0, -180px);
 .main__registration{
   text-align: center;
   transform: translate(0, -100px);
+
 }
 .main__registration a{
   text-decoration: none;
   color: black;
   font-size: 20px;
   font-weight: 300;
+  transition: 500ms
+
 }
 .main__registration--selected a{
   color: #FFB802;
@@ -142,6 +150,8 @@ transform: translate(0, -180px);
     margin: auto;
     width: 200px;
     text-align: center;
+    transition: 500ms
+
   }
 
 header,
@@ -153,7 +163,7 @@ section {
   border: 2px solid darkgreen;
 }
 
-div {
+.container div {
   border: 2px solid #ffce42;
 }
 img {
@@ -324,7 +334,7 @@ img {
       transform: translate(0, -360px);
       font-size: 25px;
       font-weight: 200;
-      width: 1100px;
+      width: 1000px;
     }
   
 
