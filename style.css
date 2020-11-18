@@ -26,6 +26,10 @@ nav div{
   justify-content: flex-end;
   padding-left: 10px;
 }
+nav a{
+  text-decoration: none;
+  color: black;
+}
 .main{
   font-family: 'Montserrat', sans-serif;
 }
