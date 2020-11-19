@@ -12,7 +12,7 @@ body {
   font-size: 14px;
 }
 
-nav{
+nav {
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -21,20 +21,20 @@ nav{
   font-weight: 200;
   font-family: 'Montserrat', sans-serif;
 }
-nav div{
+nav div {
   display: flex;
   justify-content: flex-end;
   padding-left: 10px;
 }
-nav a{
+nav a {
   text-decoration: none;
   color: black;
 }
-.main{
+.main {
   font-family: 'Montserrat', sans-serif;
 }
 /*-----hexagon----- */
-.hexagon__position{
+.hexagon__position {
   padding-top: 13vh;
   display: flex;
   flex-direction: column;
@@ -44,18 +44,17 @@ nav a{
   position: relative;
   border-radius: 5px;
   z-index: -1;
-  width: 200px; 
+  width: 200px;
   height: 115.47px;
   background-color: #ffffff;
   margin: 57.74px 0;
   border-left: solid 3px #000000;
   border-right: solid 3px #000000;
-
 }
 
 .hexagon::before,
 .hexagon::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   width: 141.42px;
@@ -65,7 +64,6 @@ nav a{
   transform: scaleY(0.5774) rotate(-45deg);
   background-color: inherit;
   left: 26.2893px;
-
 }
 
 .hexagon::before {
@@ -79,32 +77,32 @@ nav a{
   border-bottom: solid 4.2426px #000000;
   border-left: solid 4.2426px #000000;
 }
-.hexagon--selected{
-  background-color: #FFB802;
-  border-left: solid 3px #FFB802;
-  border-right: solid 3px #FFB802;
+.hexagon--selected {
+  background-color: #ffb802;
+  border-left: solid 3px #ffb802;
+  border-right: solid 3px #ffb802;
 }
 .hexagon--selected::before,
-.hexagon--selected::after{
-  border: #FFB802;
+.hexagon--selected::after {
+  border: #ffb802;
 }
 
-.main__logo{
-display: flex;
-flex-direction: column;
-align-items: center;
-transform: translate(0, -180px);
+.main__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(0, -180px);
 }
-.main__logo h1{
+.main__logo h1 {
   margin: 0;
   font-size: 60px;
-  letter-spacing: 0px;
+
   font-weight: 500;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: 900ms
+  transition: 900ms;
 }
 
-.main__btn{
+.main__btn {
   margin-top: 3px;
   text-decoration: none;
   font-size: 25px;
@@ -118,45 +116,40 @@ transform: translate(0, -180px);
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-  transition: 700ms
-
+  transition: 700ms;
 }
-.main__btn--selected{
+.main__btn--selected {
   color: white;
-  background-color: #FFB802;
+  background-color: #ffb802;
   border: 0;
 }
 
-.main__registration{
+.main__registration {
   text-align: center;
   transform: translate(0, -100px);
-
 }
-.main__registration a{
+.main__registration a {
   text-decoration: none;
   color: black;
   font-size: 20px;
   font-weight: 300;
-  transition: 500ms
-
+  transition: 500ms;
 }
-.main__registration--selected a{
-  color: #FFB802;
+.main__registration--selected a {
+  color: #ffb802;
   font-weight: 500;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-
 }
 
-.main__welcome{
-    transform: translate(0, -70px);
-    font-size: 15px;
-    font-weight: 300;
-    margin: auto;
-    width: 200px;
-    text-align: center;
-    transition: 500ms
-
-  }
+.main__welcome {
+  transform: translate(0, -70px);
+  font-size: 15px;
+  font-weight: 300;
+  margin: auto;
+  width: 200px;
+  text-align: center;
+  transition: 500ms;
+}
 
 header,
 footer,
@@ -224,124 +217,122 @@ img {
 /*----------MAIN for TABLET 750px----------*/
 
 @media only screen and (min-width: 600px) {
-  nav{
+  nav {
     font-size: 25px;
   }
-  
   .hexagon {
-    width: 400px; 
+    width: 400px;
     height: 230.94px;
     margin: 115.47px 0;
     border-left: solid 5px #000000;
     border-right: solid 5px #000000;
   }
-  
+
   .hexagon:before,
   .hexagon:after {
     width: 282.84px;
     height: 282.84px;
     left: 53.5786px;
   }
-  
+
   .hexagon:before {
     top: -141.4214px;
     border-top: solid 7.0711px #000000;
     border-right: solid 7.0711px #000000;
   }
-  
+
   .hexagon:after {
     bottom: -141.4214px;
     border-bottom: solid 7.0711px #000000;
     border-left: solid 7.0711px #000000;
   }
-  .hexagon--selected{
-    border-left: solid 5px #FFB802;
-    border-right: solid 5px #FFB802;
+  .hexagon--selected {
+    border-left: solid 5px #ffb802;
+    border-right: solid 5px #ffb802;
   }
-  .main__logo{
+  .main__logo {
     transform: translate(0, -350px);
-    }
-    .main__logo h1{
-      font-size: 120px;
-    }
-    .main__btn{
-      margin-top: 20px;
-      font-size: 35px;
-      font-weight: 500;
-      padding: 15px;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-    .main__registration{
-      transform: translate(0, -200px);
-    }
-    .main__registration a{
-      font-size: 30px;
-      font-weight: 300;
-    }
-    .main__welcome{
-      transform: translate(0, -160px);
-      font-size: 25px;
-      font-weight: 200;
-      width: 400px;
-    }
-  
-    
+  }
+  .main__logo h1 {
+    font-size: 120px;
+  }
+  .main__btn {
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 500;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .main__registration {
+    transform: translate(0, -200px);
+  }
+  .main__registration a {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .main__welcome {
+    transform: translate(0, -160px);
+    font-size: 25px;
+    font-weight: 200;
+    width: 400px;
+  }
 }
 
 /*----------TABLET & DESKTOP FROM 1024px----------*/
 
 @media only screen and (min-width: 1024px) {
+  .hexagon__position {
+    padding-top: 30px;
+  }
   .hexagon {
-    width: 500px; 
+    width: 500px;
     height: 288.68px;
     margin: 144.34px 0;
   }
-  
+
   .hexagon:before,
   .hexagon:after {
     width: 353.55px;
     height: 353.55px;
     left: 68.2233px;
   }
-  
+
   .hexagon:before {
     top: -176.7767px;
   }
-  
+
   .hexagon:after {
     bottom: -176.7767px;
-   
   }
-  .main__logo{
+  .main__logo {
     padding-top: 10vh;
     transform: translate(0, -530px);
-    }
-    .main__logo h1{
-      font-size: 150px;
-    }
-    .main__btn{
-      margin-top: 20px;
-      font-size: 40px;
-      font-weight: 500;
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-    .main__registration{
-      transform: translate(0, -520px);
-    }
-    .main__registration a{
-      font-size: 30px;
-      font-weight: 300;
-    }
-    .main__welcome{
-      transform: translate(0, -360px);
-      font-size: 25px;
-      font-weight: 200;
-      width: 1000px;
-    }
-  
-
+  }
+  .main__logo h1 {
+    font-size: 150px;
+    letter-spacing: 1px;
+  }
+  .main__btn {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .main__registration {
+    transform: translate(0, -520px);
+  }
+  .main__registration a {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .main__welcome {
+    transform: translate(0, -370px);
+    font-size: 25px;
+    font-weight: 200;
+    width: 1000px;
+  }
 
   .container {
     display: grid;
