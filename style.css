@@ -208,7 +208,7 @@ img {
 
 /*----------TABLET & DESKTOP FROM 1024px----------*/
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
 
   .hexagon__position {
     padding-top: 9vh;
