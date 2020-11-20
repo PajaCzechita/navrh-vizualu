@@ -33,86 +33,45 @@ nav a {
 .main {
   font-family: 'Montserrat', sans-serif;
 }
+footer{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
 /*-----hexagon----- */
 .hexagon__position {
-  padding-top: 13vh;
+  padding-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .hexagon {
-  position: relative;
-  border-radius: 5px;
-  z-index: -1;
   width: 200px;
-  height: 115.47px;
-  background-color: #ffffff;
-  margin: 57.74px 0;
-  border-left: solid 3px #000000;
-  border-right: solid 3px #000000;
-}
-
-.hexagon::before,
-.hexagon::after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  width: 141.42px;
-  height: 141.42px;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 26.2893px;
-}
-
-.hexagon::before {
-  top: -70.7107px;
-  border-top: solid 4.2426px #000000;
-  border-right: solid 4.2426px #000000;
-}
-
-.hexagon::after {
-  bottom: -70.7107px;
-  border-bottom: solid 4.2426px #000000;
-  border-left: solid 4.2426px #000000;
-}
-.hexagon--selected {
-  background-color: #ffb802;
-  border-left: solid 3px #ffb802;
-  border-right: solid 3px #ffb802;
-}
-.hexagon--selected::before,
-.hexagon--selected::after {
-  border: #ffb802;
-}
+ }
 
 .main__logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translate(0, -180px);
+  transform: translate(0, -170px);
 }
 .main__logo h1 {
   margin: 0;
-  font-size: 60px;
-
+  font-size: 55px;
+  letter-spacing: 3px;
   font-weight: 500;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: 900ms;
 }
 
 .main__btn {
-  margin-top: 3px;
+  margin-top: 5px;
   text-decoration: none;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   color: black;
   background-color: white;
-  padding: 7px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: 2px solid black;
+  padding: 5px 20px 5px 20px;;
+  border: 1px solid black;
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
@@ -151,11 +110,9 @@ nav a {
   transition: 500ms;
 }
 
-header,
-footer,
-nav {
+/*nav {
   border: 2px solid maroon;
-}
+}*/
 section {
   border: 2px solid darkgreen;
 }
@@ -215,40 +172,15 @@ img {
 }
 
 /*----------MAIN for TABLET 750px----------*/
-
+/*
 @media only screen and (min-width: 600px) {
   nav {
     font-size: 25px;
   }
   .hexagon {
-    width: 400px;
-    height: 230.94px;
-    margin: 115.47px 0;
-    border-left: solid 5px #000000;
-    border-right: solid 5px #000000;
+    width: 410px;
   }
 
-  .hexagon:before,
-  .hexagon:after {
-    width: 282.84px;
-    height: 282.84px;
-    left: 53.5786px;
-  }
-
-  .hexagon:before {
-    top: -141.4214px;
-    border-top: solid 7.0711px #000000;
-    border-right: solid 7.0711px #000000;
-  }
-
-  .hexagon:after {
-    bottom: -141.4214px;
-    border-bottom: solid 7.0711px #000000;
-    border-left: solid 7.0711px #000000;
-  }
-  .hexagon--selected {
-    border-left: solid 5px #ffb802;
-    border-right: solid 5px #ffb802;
   }
   .main__logo {
     transform: translate(0, -350px);
@@ -260,9 +192,7 @@ img {
     margin-top: 20px;
     font-size: 35px;
     font-weight: 500;
-    padding: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 5px 30px 5px 30px;
   }
   .main__registration {
     transform: translate(0, -200px);
@@ -280,30 +210,13 @@ img {
 }
 
 /*----------TABLET & DESKTOP FROM 1024px----------*/
-
+/*
 @media only screen and (min-width: 1024px) {
   .hexagon__position {
     padding-top: 30px;
   }
   .hexagon {
-    width: 500px;
-    height: 288.68px;
-    margin: 144.34px 0;
-  }
-
-  .hexagon:before,
-  .hexagon:after {
-    width: 353.55px;
-    height: 353.55px;
-    left: 68.2233px;
-  }
-
-  .hexagon:before {
-    top: -176.7767px;
-  }
-
-  .hexagon:after {
-    bottom: -176.7767px;
+    width: 410px;
   }
   .main__logo {
     padding-top: 10vh;
@@ -382,3 +295,4 @@ img {
     grid-row: 5/9;
   }
 }
+*/
