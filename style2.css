@@ -15,43 +15,71 @@ footer{
   align-items: center;
   justify-content: center;
 }
+.main-logo{
+  padding: 20px;
+}
 .main-logo h1{
   margin: 0;
-  font-size: 90px;
+  font-size: 100px;
 }
 
 .main-group{
- display: grid;
- grid-template-columns: auto auto auto auto auto auto;
-  grid-template-rows:  auto auto auto auto;
-  border: 1px solid black;
-  color: red;
+  display: grid;
+  grid-template-columns:  auto auto auto auto auto auto auto auto auto auto auto ;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  color: white;
   justify-content: center;
   text-align: center;
 }
 
 .main-group div{
-  border: 1px solid black;
+  position: relative;
   padding: 5px;
 }
-.main-group__prihlasit{
-  grid-row: 1/3;
-  grid-column: 1/3;
+.main-group h2,h3,h4, .instagram-ikon{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
+.main-group h2{
+  font-size: 30px;
+  top:55px;
+}
+.main-group h3{
+  top:40px;
+}
+.main-group h4{
+  top:30px;
+}
+
+.main-group__prihlasit{
+  grid-row: 1/5;
+  grid-column: 1/5;
+}
+
 .main-group__kontakt{
-  grid-column: 3/4;
+  grid-row: 1/4;
+  grid-column: 5/8;
 }
 .main-group__obeescale{
-  grid-column: 4/5;
+  grid-row: 1/4;
+  grid-column: 8/11;
 }
 .main-group__eshop{
-  grid-row: 2/4;
-  grid-column: 3/4;
+  grid-row: 4/9;
+  grid-column: 5/9;
 }
 .main-group__registrace{
-  grid-row: 3/4;
-  grid-column: 2/3;
+  grid-row: 5/8;
+  grid-column: 2/5;
 }
 .main-group__instagram{
-  grid-column: 4/5;
+  grid-row: 4/6;
+  grid-column: 9/11;
+}
+.instagram-ikon{
+  top:27px
 }
