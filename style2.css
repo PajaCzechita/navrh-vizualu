@@ -21,6 +21,7 @@ footer{
 .main-logo h1{
   margin: 0;
   font-size: 100px;
+  transition: 900ms;
 }
 
 .main-group{
@@ -29,11 +30,13 @@ footer{
   grid-template-rows: auto auto auto auto auto auto auto auto auto;
   justify-content: center;
   text-align: center;
+
 }
 
 .main-group div{
   position: relative;
   padding: 5px;
+
 }
 
 .main-group a{
