@@ -1,0 +1,57 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+footer{
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+
+.main-2{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-logo h1{
+  margin: 0;
+  font-size: 90px;
+}
+
+.main-group{
+ display: grid;
+ grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows:  auto auto auto auto;
+  border: 1px solid black;
+  color: red;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-group div{
+  border: 1px solid black;
+  padding: 5px;
+}
+.main-group__prihlasit{
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+.main-group__kontakt{
+  grid-column: 3/4;
+}
+.main-group__obeescale{
+  grid-column: 4/5;
+}
+.main-group__eshop{
+  grid-row: 2/4;
+  grid-column: 3/4;
+}
+.main-group__registrace{
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.main-group__instagram{
+  grid-column: 4/5;
+}
