@@ -27,7 +27,6 @@ footer{
   display: grid;
   grid-template-columns:  auto auto auto auto auto auto auto auto auto auto auto ;
   grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  color: white;
   justify-content: center;
   text-align: center;
 }
@@ -35,6 +34,11 @@ footer{
 .main-group div{
   position: relative;
   padding: 5px;
+}
+
+.main-group a{
+  text-decoration: none;
+  color: white;
 }
 .main-group h2,h3,h4, .instagram-ikon{
   position: absolute;
@@ -82,4 +86,16 @@ footer{
 }
 .instagram-ikon{
   top:27px
+}
+
+.main-group__prihlasit a, 
+.main-group__eshop a{
+  padding: 20px;
+}
+.main-group__kontakt a,
+.main-group__obeescale a{
+  padding: 15px;
+}
+.main-group__registrace a{
+  padding: 10px;
 }
